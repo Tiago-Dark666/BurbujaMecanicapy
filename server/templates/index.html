@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burbuja Mecanica</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='inicio.css') }}">
+    
+
+</head>
+<body>
+   
+
+
+    <div class="container-fluid">
+        <div class="container">
+            <h2>Burbuja Mecanica</h2>
+
+            <ul>
+                <a href="./viewUser.html">VER USUARIO</a>
+                <a href="./viewVet.html">VER MECANICOS</a>
+                <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
+            </ul>
+
+            <a href="./registerUser.html">
+                <button class="btn"><ion-icon name="person-circle-outline"></ion-icon> Registrar Usuario</button>
+                
+            </a>
+            <a href="./registerVet.html">
+                <button class="btn"><ion-icon name="person-circle-outline"></ion-icon> Registrar Veterinario</button>
+                
+            </a>
+        </div>
+
+        <div class="content">
+            <h1>¡BIENVENIDO !</h1>
+            <p>Aqui podras registrar tu clinica de veterinaria o tienda .</p>
+            <button class="btn" onclick="window.location.href='./registerUser.html'">REGISTRAR</button>
+
+            <p class="ubi">Para mas informacion contactenos via correo VetZone@gmail.com</p>
+        </div>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
